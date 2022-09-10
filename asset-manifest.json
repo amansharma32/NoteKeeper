@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/NoteKeeper/static/css/main.a53c1b1a.css",
+    "main.js": "/NoteKeeper/static/js/main.82aac824.js",
+    "static/media/note.png": "/NoteKeeper/static/media/note.ad99af93a9e0ad01a59b.png",
+    "index.html": "/NoteKeeper/index.html",
+    "main.a53c1b1a.css.map": "/NoteKeeper/static/css/main.a53c1b1a.css.map",
+    "main.82aac824.js.map": "/NoteKeeper/static/js/main.82aac824.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a53c1b1a.css",
+    "static/js/main.82aac824.js"
+  ]
+}
