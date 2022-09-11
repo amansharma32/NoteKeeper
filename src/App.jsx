@@ -9,16 +9,16 @@ const App = () => {
 
   const addNote = (note) =>{
    setNew((pre)=>{
-    return[...pre,note]
-   })  
+    return [...pre,note]
+   });
   }
    
   const onDelete=(id)=>{
-        setNew((old)=>{
-          old.filter((curdata,indx)=>{
+        setNew((olddata)=>
+          olddata.filter((currdata,indx)=>{
             return indx !== id;
           })
-        })
+        )
   }
 
   return (
@@ -28,13 +28,15 @@ const App = () => {
        <CreateNote passNote={addNote}/>
        
        {old.map((val,index)=>{
-        return <Note 
+        return (
+          <Note 
           key={index}
           id={index}
           title={val.title}
           content={val.content}
           deleteItem={onDelete}
         />
+        );
        })}
        <Footer/>
     </>
